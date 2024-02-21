@@ -1,0 +1,19 @@
+:root{
+    --bg-color:#130f1a;
+    --btn-bg-color:#FF0000;
+    --font-color:#ffffff;
+    --para-color:#ffffff;
+    /* --bg-btn-color:linear-gradient(to left, #ff0000 0%, #c6019a 51%, #ff0000 100%); */
+
+}
+.btn{
+    background-image:linear-gradient(to left, #ff0000 0%, #c6019a 51%, #ff0000 100%) ;
+    color: var(--font-color);
+}
+.btn:hover{
+    background-image:linear-gradient((linear, right top, left top, from(#ff0000), color-stop(51%, #c6019a), to(#ff0000)));
+
+}
+.h1{
+    -webkit-background-clip:text;
+}

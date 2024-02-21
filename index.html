@@ -1,0 +1,492 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Best Highlights Of The Latest</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- --- Animation Cdn link ----  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font family link  -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> -->
+    <link href="assets/css/gfonts.min.css" rel="stylesheet" media="screen">
+</head>
+<body class="font-serif">
+    <section class="Home-section " style="background-image: url(https://preview.colorlib.com/theme/beko/img/banner_bg.png.webp);" >
+       
+        <section class="bg-transparent dark:bg-transparent max-w-6xl px-4 mx-auto">
+            <div class="max-w-6xl px-4 mx-auto" x-data="{open:false}">
+                <nav class="flex items-center justify-between py-4"> 
+                    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://preview.colorlib.com/theme/beko/img/logo.png" alt="">
+                  </a> 
+                  <ul class="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex ">
+                        <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--btn-bg-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Home</a>
+                        </li>
+                        <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">About us</a>
+                        </li>
+                        <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Features</a>
+                        </li>
+                        <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Blog </a>
+                        </li>
+                        <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Testimonials</a>
+                        </li>
+                    </ul>
+                    <div class="lg:hidden">
+                        <button
+                            class="flex items-center px-3 py-2 text-blue-200 border border-blue-200 rounded dark:text-gray-400 hover:text-blue-300 hover:border-blue-300 lg:hidden"
+                            @click="open =true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex">
+                        
+                        <a href="" class="mr-4 ">
+                            <button class="btn inline-flex uppercase items-center justify-center px-8 py-3 ">Install Now </button>
+                        </a>
+                    </div>
+                </nav>
+                <!-- Mobile Sidebar -->
+                <div class="fixed inset-0 w-full bg-gray-900 opacity-25 dark:bg-gray-400 lg:hidden"
+                    :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
+                </div>
+                <div class="absolute inset-0 z-10 h-screen p-3 text-gray-700 duration-500 transform shadow-md dark:bg-gray-800 bg-blue-50 w-80 lg:hidden lg:transform-none lg:relative"
+                    :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
+                    <div class="flex justify-between px-5 py-2">
+                        <a class="text-2xl font-bold dark:text-gray-300" href="#">Logo</a>
+                        <button class="rounded-md hover:text-blue-300 lg:hidden dark:text-gray-400" @click="open=false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-x-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="px-5 text-left mt-7">
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-100">Home</a>
+                        </li>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">About us</a>
+                        </li>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Features</a>
+                        </li>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Blog </a>
+                        </li>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Testimonials</a>
+                        </li>
+                    </ul>
+                    <div class="border-t border-green-400 dark:border-gray-400 my-7"></div>
+                    <div class="flex items-center px-5 lg:hidden">
+                        <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                        <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                            </svg>
+                        </a>
+                        <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="py-20 pr-24 pt-[11rem] " data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+            <div class="max-w-6xl px-4 mx-auto md:px-0 font-poppins">
+                <div class="flex flex-wrap items-center px-4">
+                    <div class="w-full px-4 mb-16 md:w-1/2 md:mb-0">
+                        <span
+                            class="inline-block mb-4 text-lg font-semibold leading-none border-l-8 text-red-500 capitalize dark:text-[var(--btn-bg-color)]">
+                            Gaming World's
+                        </span>
+                        <h2
+                            class="mb-6 text-7xl  leading-tight tracking-tight text-[var(--font-color)]  dark:text-[var(--font-color)]   md:text-5xl lg:text-7xl">
+                            𝕭𝖊𝖘𝖙 𝕳𝖎𝖌𝖍𝖑𝖎𝖌𝖍𝖙𝖘 𝕺𝖋 𝕿𝖍𝖊 𝕷𝖆𝖙𝖊𝖘𝖙
+                        </h2>
+                        <p class="mb-6 font-medium tracking-wide text-[var(--para-color)] dark:text-[var(--para-color)] md:text-lg">
+                            A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            Success is most important part of life and it is determination of having achieved .
+                        </p>
+                        <a href="" class="mr-4 ">
+                            <button class="btn inline-flex uppercase items-center justify-center px-8 py-3 ">Watch Tutorial </button>
+                        </a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    </div>
+</section>
+
+<!-- 
+ crousal Section 
+<div class="relative w-full flex gap-4 py-6 overflow-x-auto bg-[var(--bg-color)]">
+	<img class="h-18 p-4 w-[300px] aspect-video rounded-lg object-cover object-center bg-transparent  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/beko/img/client_logo/client_logo_1.png" alt="Image 1">
+	<img class="h-18 p-4 w-[300px] aspect-video rounded-lg object-cover object-center bg-transparent  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/beko/img/client_logo/client_logo_5.png" alt="Image 2">
+	<img class="h-18 p-4 w-[300px] aspect-video rounded-lg object-cover object-center bg-transparent  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/beko/img/client_logo/client_logo_4.png" alt="Image 3">
+	<img class="h-18 p-4 w-[300px] aspect-video rounded-lg object-cover object-center bg-transparent  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/beko/img/client_logo/client_logo_3.png" alt="Image 4">
+	<img class="h-18 p-4 w-[300px] aspect-video rounded-lg object-cover object-center bg-transparent  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/beko/img/client_logo/client_logo_2.png" alt="Image 5">
+	<img class="h-18 p-4 w-[300px] aspect-video rounded-lg object-cover object-center bg-transparent  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/beko/img/client_logo/client_logo_1.png" alt="Image 5">
+</div> -->
+
+
+<section class="flex items-center py-10 bg-[var(--bg-color)] xl:h-screen font-poppins dark:bg[var(--bg-color)] ">
+    <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+        <div class="flex flex-wrap ">
+            <div class="w-full px-4 mb-10 lg:w-1/2  lg:mb-0" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="relative">
+                    <img src="https://preview.colorlib.com/theme/beko/img/about_img.png.webp" alt=""
+                        class="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded transition duration-500  group-hover:origin-center hover:scale-105">
+                    <!-- <div
+                        class="absolute z-10 hidden w-full h-full bg-[#edcbbe] rounded-bl-[80px] rounded -bottom-6 right-6 lg:block">
+                    </div> -->
+                    
+                </div>
+            </div>
+            <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 " data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="relative">
+                    <h1
+                        class=" h1 absolute -top-20 left-0 text-[20px] lg:text-[100px]  font-bold   opacity-15 md:block hidden" style=" background-image:linear-gradient(to left, #ff0000 0%, #c6019a 51%, #ff0000 100%) ; color: transparent; ">
+                        About Us
+                    </h1>
+                    <h1 class="pl-2 text-6xl border-l-8 border-[var(--btn-bg-color)] text-[var(--font-color)] md:text-6xl dark:text-[var(--font-color)]">
+                        𝐀𝐛𝐨𝐮𝐭 𝐔𝐬 𝐅𝐢𝐧𝐝 𝐨𝐮𝐭 𝐚𝐛𝐨𝐮𝐭 𝐮𝐬 𝐢𝐧 𝐡𝐢𝐬𝐭𝐨𝐫𝐲
+                    </h1>
+                </div>
+                <p class="mt-6 mb-10 text-base leading-7 text-[var(--para-color)] dark:text-[var(--para-color)]">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br><br>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                </p>
+                <div class=" flex">
+                <a href="" class="mr-4 ">
+                    <button class="btn inline-flex uppercase items-center justify-center px-8 py-3 ">Install Now </button>
+                </a><br>
+                <a href="" class="mr-4 ">
+                    <button class="btn inline-flex uppercase items-center justify-center px-8 py-3 "> Watch Tutorial </button>
+                </a><br>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- section 2  -->
+
+<section class="shadow-sm h-full w-full " style="background-image: url(https://preview.colorlib.com/theme/beko/img/live_stareams_bg.png.webp); ">
+   
+    <div class="relative overflow-hidden "  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <div class="mx-auto max-w-7xl">
+            <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:full lg:pb-28 xl:pb-32">
+                <div class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="max-w-lg mx-auto mb-8 text-center lg:max-w-md lg:mx-0 lg:text-left">
+                        <h1
+                        class=" h1 absolute -top-20 left-0 text-[20px] lg:text-[100px]  font-bold   opacity-80 pt-[4rem] md:block hidden" style=" background-image:linear-gradient(to left, #ff0000 0%, #c6019a 51%, #ff0000 100%) ; color: transparent; ">
+                        <img src="https://preview.colorlib.com/theme/beko/img/Shape_text.png.webp" alt="">
+                    </h1>
+                        <h2
+                            class=" mt-6 text-4xl leading-10 text-[var(--font-color)] tracking-tight md:text-8xl">
+                            𝖑𝖎𝖛𝖊 𝖘𝖙𝖆𝖗𝖊𝖆𝖒𝖘                        </h2>
+                        
+                        <div class="justify-center mt-6 lg:justify-start sm:flex">
+                            <a href="" class="mr-4 ">
+                                <button class="btn inline-flex uppercase items-center justify-center px-9 py-4 ">Install Now </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+            <div class="relative overflow-hidden shadow-lg group">
+                <img src="https://img.freepik.com/premium-photo/man-with-gas-mask-stands-smoke_684882-1167.jpg"
+                    class="group-hover:origin-center group-hover:scale-105 transition inset-0 object-cover object-center  duration-500 object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full "
+                    alt="">
+                <div class="img-div absolute inset-0 z-0 group-hover:bg-[var(--btn-bg-color)] opacity-25" ></div>
+        </div>
+    </div>
+</section>
+
+<!-- UpComing Fighjter Section  -->
+
+<section class="shadow-sm bg-[var(--bg-color)] h-full w-full " style="background-image: url(https://preview.colorlib.com/theme/beko/img/event_bg.png.webp);  ">
+
+<div class=""  data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+    <div class="relative flex flex-col items-center">
+        <div
+            class="absolute hidden md:block -top-14 left-0 pl-[11rem] text-[100px] text-[var(--btn-bg-color)] font-bold opacity-10">
+            UP Coming Fighter 
+        </div>
+        <h1 class="text-7xl font-bold dark:text-white">𝖚𝖕𝖈𝖔𝖒𝖎𝖓𝖌 𝖋𝖎𝖌𝖍𝖙𝖊𝖗'𝖘</h1>
+       
+    </div>
+    
+
+</div>
+</section>
+
+<!-- gallery Section  -->
+
+<section class="flex items-center py-16 bg-[var(--bg-color)] dark:bg-[var(--bg-color)] font-poppins">
+    <div class="p-4 mx-auto max-w-7xl">
+        <h2 class="pb-4 text-4xl font-bold text-center text-gray-800 md:text-6xl dark:text-gray-400">
+            𝓐𝓛𝓛 𝓕𝓘𝓖𝓗𝓣𝓔𝓡'𝓢
+        </h2>
+        <div class="mx-auto mb-16 border-b border-red-700 w-44 dark:border-gray-400"></div>
+        <div class="flex flex-wrap -m-1 md:-m-2">
+            <div class="w-full px-4 sm:w-1/3">
+                <div class="mb-8 ">
+                    <a href="#">
+                        <div class="relative mb-5 overflow-hidden">
+                            <img class="object-cover w-full h-[250px] lg:h-[450px] transition duration-500   group-hover:origin-center hover:scale-105"
+                                src="https://wallpapercave.com/wp/wp2557944.jpg" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="mb-8">
+                    <a href="#">
+                        <div class="relative mb-5 overflow-hidden">
+                            <img class="object-cover w-full h-[250px] transition duration-500  group-hover:origin-center hover:scale-105"
+                                src="https://preview.colorlib.com/theme/beko/img/gallery/gallery_item_6.png.webp" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/3 ">
+                <div class="mb-8 ">
+                    <a href="#">
+                        <div class="relative mb-5 overflow-hidden">
+                            <img class="object-cover w-full h-[250px] transition duration-500  group-hover:origin-center hover:scale-105"
+                                src="https://img.freepik.com/premium-photo/man-with-gas-mask-stands-smoke_684882-1167.jpg" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="mb-8 ">
+                    <a href="#">
+                        <div class="relative mb-5 overflow-hidden">
+                            <img class="object-cover w-full h-[250px] lg:h-[450px]  transition duration-500  group-hover:origin-center hover:scale-105"
+                                src="https://wallpapercave.com/wp/wp12141772.jpg" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/3 ">
+                <div class="mb-8 ">
+                    <a href="#">
+                        <div class="relative mb-5 overflow-hidden">
+                            <img class="object-cover w-full h-[250px] lg:h-[450px] transition duration-500  group-hover:origin-center hover:scale-105"
+                                src="https://preview.colorlib.com/theme/beko/img/gallery/gallery_item_4.png.webp" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="mb-8 ">
+                    <a href="#">
+                        <div class="relative mb-5 overflow-hidden">
+                            <img class="object-cover w-full h-[250px] transition duration-500  group-hover:origin-center hover:scale-105"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwbPx80S_BKuWiuVN7aV5uzz2RXokOB_Gxj-txYe0FJXzHOTIoUGdQDoZRssRrrvIWcQ&usqp=CAU" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footeeeer  section  -->
+
+<div class="bg-[var(--bg-color)]"  data-aos="fade-up">
+    <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
+        <div class="col-span-full lg:col-span-2">
+          <!-- logo - start -->
+          <div class="mb-4 lg:-mt-2">
+            <a href="/" class="inline-flex items-center gap-2 text-xl font-bold text-gray-100 md:text-2xl" aria-label="logo">
+              <img src="https://preview.colorlib.com/theme/narosundar/assets/img/logo/logo.png" alt="">
+            </a>
+          </div>
+          <!-- logo - end -->
+  
+          <p class="mb-6 text-gray-400 sm:pr-8">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+  
+          <!-- social - start -->
+          <div class="flex gap-4">
+            <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+              <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+  
+            <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+              <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+              </svg>
+            </a>
+  
+            <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+              <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+  
+            <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+              <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <!-- social - end -->
+        </div>
+  
+        <!-- nav - start -->
+        <div>
+          <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Products</div>
+  
+          <nav class="flex flex-col gap-4">
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Overview</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Solutions</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Pricing</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Customers</a>
+            </div>
+          </nav>
+        </div>
+        <!-- nav - end -->
+  
+        <!-- nav - start -->
+        <div>
+          <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Company</div>
+  
+          <nav class="flex flex-col gap-4">
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Investor Relations</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Jobs</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Press</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+            </div>
+          </nav>
+        </div>
+        <!-- nav - end -->
+  
+        <!-- nav - start -->
+        <div>
+          <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Support</div>
+  
+          <nav class="flex flex-col gap-4">
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Documentation</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Chat</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+            </div>
+          </nav>
+        </div>
+        <!-- nav - end -->
+  
+        <!-- nav - start -->
+        <div>
+          <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Legal</div>
+  
+          <nav class="flex flex-col gap-4">
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms of Service</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>
+            </div>
+  
+            <div>
+              <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Cookie settings</a>
+            </div>
+          </nav>
+        </div>
+        <!-- nav - end -->
+      </div>
+  
+      <div class="border-t border-gray-800 py-8 text-center text-sm text-gray-400">© 2024 - Present Dharamchand Patle . All rights reserved.</div>
+    </footer>
+  </div>
+
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Animation Script  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      duration: 1000,
+    });
+  </script>
+</body>
+</html>
